@@ -33,7 +33,7 @@
 
 - (UIImageView *)headImageView {
     if (_headImageView == nil) {
-        _headImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SelfWidth, SelfHeight)];
+        _headImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SelfHeight, SelfHeight)];
         _headImageView.layer.borderWidth = 1;
         _headImageView.layer.borderColor = [UIColor cyanColor].CGColor;
         _headImageView.layer.cornerRadius = _headImageView.frame.size.height/2;
@@ -51,7 +51,7 @@
 
 - (UILabel *)nameLabel {
     if (_nameLabel == nil) {
-        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(SelfWidth+5, 5, SelfWidth*3, 10)];
+        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(SelfHeight+5, 5, SelfHeight*3, 10)];
         _nameLabel.textColor  = [UIColor whiteColor];
         _nameLabel.font = [UIFont systemFontOfSize:13];
     }
@@ -60,7 +60,7 @@
 
 - (UILabel *)giftLabel {
     if (_giftLabel == nil) {
-        _giftLabel = [[UILabel alloc]initWithFrame:CGRectMake(SelfWidth+5, CGRectGetMaxY(_headImageView.frame)-15, SelfWidth*3, 10)];
+        _giftLabel = [[UILabel alloc]initWithFrame:CGRectMake(SelfHeight+5, CGRectGetMaxY(_headImageView.frame)-15, SelfHeight*3, 10)];
         _giftLabel.textColor  = [UIColor yellowColor];
         _giftLabel.font = [UIFont systemFontOfSize:13];
     }
@@ -82,7 +82,7 @@
 
 - (ShakeLabel *)shakeLabel {
     if (_shakeLabel == nil) {
-        _shakeLabel = [ShakeLabel new];
+        _shakeLabel = [[ShakeLabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.frame)+5, -20, 50, 50)];
         _shakeLabel.font = [UIFont systemFontOfSize:16];
         _shakeLabel.borderColor = [UIColor yellowColor];
         _shakeLabel.textColor = [UIColor greenColor];
