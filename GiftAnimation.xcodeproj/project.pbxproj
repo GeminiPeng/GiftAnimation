@@ -15,6 +15,7 @@
 		B49C76C21DF10922008B353B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49C76C01DF10922008B353B /* LaunchScreen.storyboard */; };
 		B49C76CD1DF10923008B353B /* GiftAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76CC1DF10923008B353B /* GiftAnimationTests.m */; };
 		B49C76D81DF10923008B353B /* GiftAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76D71DF10923008B353B /* GiftAnimationUITests.m */; };
+		B49C76E91DF11530008B353B /* GiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76E81DF11530008B353B /* GiftModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B49C76D31DF10923008B353B /* GiftAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiftAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49C76D71DF10923008B353B /* GiftAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiftAnimationUITests.m; sourceTree = "<group>"; };
 		B49C76D91DF10923008B353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49C76E71DF11530008B353B /* GiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftModel.h; sourceTree = "<group>"; };
+		B49C76E81DF11530008B353B /* GiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		B49C76B11DF10922008B353B /* GiftAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B49C76E61DF114CC008B353B /* Model */,
+				B49C76E51DF114B6008B353B /* AnimationView */,
 				B49C76B51DF10922008B353B /* AppDelegate.h */,
 				B49C76B61DF10922008B353B /* AppDelegate.m */,
 				B49C76B81DF10922008B353B /* ViewController.h */,
@@ -138,6 +143,22 @@
 				B49C76D91DF10923008B353B /* Info.plist */,
 			);
 			path = GiftAnimationUITests;
+			sourceTree = "<group>";
+		};
+		B49C76E51DF114B6008B353B /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AnimationView;
+			sourceTree = "<group>";
+		};
+		B49C76E61DF114CC008B353B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B49C76E71DF11530008B353B /* GiftModel.h */,
+				B49C76E81DF11530008B353B /* GiftModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B49C76BA1DF10922008B353B /* ViewController.m in Sources */,
+				B49C76E91DF11530008B353B /* GiftModel.m in Sources */,
 				B49C76B71DF10922008B353B /* AppDelegate.m in Sources */,
 				B49C76B41DF10922008B353B /* main.m in Sources */,
 			);
