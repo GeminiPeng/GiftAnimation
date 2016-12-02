@@ -27,7 +27,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     ChatMessage * msg = [ChatMessage new];
-    msg.text = @"1个 [鲜花]";
+    msg.text = @"1束 [鲜花]";
     
     int x =arc4random()%9;
     msg.senderChatId = [NSString stringWithFormat:@"%d",x];

@@ -82,7 +82,7 @@
 
 - (ShakeLabel *)shakeLabel {
     if (_shakeLabel == nil) {
-        _shakeLabel = [[ShakeLabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.frame)+5, -20, 50, 50)];
+        _shakeLabel = [[ShakeLabel alloc]initWithFrame:CGRectMake(207, -20, 50, 50)];
         _shakeLabel.font = [UIFont systemFontOfSize:16];
         _shakeLabel.borderColor = [UIColor yellowColor];
         _shakeLabel.textColor = [UIColor greenColor];
