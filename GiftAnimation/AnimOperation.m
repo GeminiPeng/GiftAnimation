@@ -34,6 +34,25 @@
     return self;
 }
 
+- (void)start {
+    
+    if ([self isCancelled]) {
+        self.finished = YES;
+        return;
+    }
+    self.executing = YES;
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        _giftShowView.model = _model;
+        _giftShowView.originFrame = _giftShowView.frame;
+        [self.listView addSubview:_giftShowView];
+        
+        [self.giftShowView animateWithCompleteBlock:^(BOOL finished, NSInteger finishCount) {
+            self.finished = finished;
+            self.finishedBlock(finished,finishCount);
+        }];
+    }];
+}
+
 - (void)setExecuting:(BOOL)executing {
     [self willChangeValueForKey:@"isExecuting"];
     _executing = executing;
