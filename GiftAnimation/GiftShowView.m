@@ -91,20 +91,20 @@
 
 -(void)setUI {
     _animCount = 0;
-    [self addSubview:_bgImageView];
-    [self addSubview:_headImageView];
-    [self addSubview:_giftImageView];
-    [self addSubview:_nameLabel];
-    [self addSubview:_giftLabel];
-    [self addSubview:_shakeLabel];
+    [self addSubview:self.bgImageView];
+    [self addSubview:self.headImageView];
+    [self addSubview:self.giftImageView];
+    [self addSubview:self.nameLabel];
+    [self addSubview:self.giftLabel];
+    [self addSubview:self.shakeLabel];
     
 }
 
 -(void)setModel:(GiftModel *)model {
     _model = model;
-    _headImageView.image = model.headImage;
-    _giftImageView.image = model.giftImage;
-    _nameLabel.text = model.name;
+    self.headImageView.image = model.headImage;
+    self.giftImageView.image = model.giftImage;
+    self.nameLabel.text = model.name;
     _giftLabel.text = [NSString stringWithFormat:@"送了%@",model.giftName];
     _giftCount = model.giftCount;
 }
