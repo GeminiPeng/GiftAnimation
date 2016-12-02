@@ -5,10 +5,10 @@
 //  Created by Pengbo on 2016/12/2.
 //  Copyright © 2016年 Pengbo. All rights reserved.
 //
-#define SelfWidth self.frame.size.width
-#define SelfHeight self.frame.size.height
-#define SelfX self.frame.origin.x
-#define SelfY self.frame.origin.y
+#define SelfWidth (self.frame.size.width)
+#define SelfHeight (self.frame.size.height)
+#define SelfX (self.frame.origin.x)
+#define SelfY (self.frame.origin.y)
 #import "GiftShowView.h"
 
 @interface GiftShowView()
@@ -26,7 +26,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         _originFrame = self.frame;
-        [self setUI];
+        
     }
     return self;
 }
@@ -72,6 +72,9 @@
         
         _bgImageView = [UIImageView new];
         _bgImageView.backgroundColor = [UIColor blackColor];
+        _bgImageView.frame = self.bounds;
+        _bgImageView.layer.cornerRadius = self.frame.size.height / 2;
+        _bgImageView.layer.masksToBounds = YES;
         _bgImageView.alpha = 0.3;
     }
     return _bgImageView;
@@ -88,6 +91,12 @@
     return _shakeLabel;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    self.frame = self.frame;
+    [self setUI];
+}
 
 -(void)setUI {
     _animCount = 0;
@@ -105,8 +114,8 @@
     self.headImageView.image = model.headImage;
     self.giftImageView.image = model.giftImage;
     self.nameLabel.text = model.name;
-    _giftLabel.text = [NSString stringWithFormat:@"送了%@",model.giftName];
-    _giftCount = model.giftCount;
+    self.giftLabel.text = [NSString stringWithFormat:@"送了%@",model.giftName];
+    self.giftCount = model.giftCount;
 }
 
 //滑出
