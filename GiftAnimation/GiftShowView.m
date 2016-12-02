@@ -26,7 +26,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         _originFrame = self.frame;
-        
+        _animCount = 0;
     }
     return self;
 }
@@ -99,7 +99,7 @@
 }
 
 -(void)setUI {
-    _animCount = 0;
+    
     [self addSubview:self.bgImageView];
     [self addSubview:self.headImageView];
     [self addSubview:self.giftImageView];
@@ -136,6 +136,7 @@
     [self performSelector:@selector(hidePresendView) withObject:nil afterDelay:12];
     
     self.shakeLabel.text = [NSString stringWithFormat:@"X %ld",_animCount];
+    NSLog(@"%ld",_animCount);
     [self.shakeLabel startAnimationWithDuration:0.3];
     
 }
