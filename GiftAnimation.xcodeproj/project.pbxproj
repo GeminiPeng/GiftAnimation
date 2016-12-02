@@ -18,6 +18,7 @@
 		B49C76E91DF11530008B353B /* GiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76E81DF11530008B353B /* GiftModel.m */; };
 		B49C76EC1DF11B72008B353B /* ChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76EB1DF11B72008B353B /* ChatMessage.m */; };
 		B49C76EF1DF11DCD008B353B /* ShakeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76EE1DF11DCD008B353B /* ShakeLabel.m */; };
+		B49C76F21DF13B41008B353B /* GiftShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76F11DF13B41008B353B /* GiftShowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		B49C76EB1DF11B72008B353B /* ChatMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessage.m; sourceTree = "<group>"; };
 		B49C76ED1DF11DCD008B353B /* ShakeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeLabel.h; sourceTree = "<group>"; };
 		B49C76EE1DF11DCD008B353B /* ShakeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeLabel.m; sourceTree = "<group>"; };
+		B49C76F01DF13B41008B353B /* GiftShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftShowView.h; sourceTree = "<group>"; };
+		B49C76F11DF13B41008B353B /* GiftShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftShowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 			children = (
 				B49C76ED1DF11DCD008B353B /* ShakeLabel.h */,
 				B49C76EE1DF11DCD008B353B /* ShakeLabel.m */,
+				B49C76F01DF13B41008B353B /* GiftShowView.h */,
+				B49C76F11DF13B41008B353B /* GiftShowView.m */,
 			);
 			name = AnimationView;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B49C76BA1DF10922008B353B /* ViewController.m in Sources */,
+				B49C76F21DF13B41008B353B /* GiftShowView.m in Sources */,
 				B49C76E91DF11530008B353B /* GiftModel.m in Sources */,
 				B49C76B71DF10922008B353B /* AppDelegate.m in Sources */,
 				B49C76EF1DF11DCD008B353B /* ShakeLabel.m in Sources */,
