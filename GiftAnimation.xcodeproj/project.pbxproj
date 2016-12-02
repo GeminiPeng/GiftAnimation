@@ -16,6 +16,7 @@
 		B49C76CD1DF10923008B353B /* GiftAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76CC1DF10923008B353B /* GiftAnimationTests.m */; };
 		B49C76D81DF10923008B353B /* GiftAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76D71DF10923008B353B /* GiftAnimationUITests.m */; };
 		B49C76E91DF11530008B353B /* GiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76E81DF11530008B353B /* GiftModel.m */; };
+		B49C76EC1DF11B72008B353B /* ChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76EB1DF11B72008B353B /* ChatMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B49C76D91DF10923008B353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49C76E71DF11530008B353B /* GiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftModel.h; sourceTree = "<group>"; };
 		B49C76E81DF11530008B353B /* GiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftModel.m; sourceTree = "<group>"; };
+		B49C76EA1DF11B72008B353B /* ChatMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMessage.h; sourceTree = "<group>"; };
+		B49C76EB1DF11B72008B353B /* ChatMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 			children = (
 				B49C76E71DF11530008B353B /* GiftModel.h */,
 				B49C76E81DF11530008B353B /* GiftModel.m */,
+				B49C76EA1DF11B72008B353B /* ChatMessage.h */,
+				B49C76EB1DF11B72008B353B /* ChatMessage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				B49C76E91DF11530008B353B /* GiftModel.m in Sources */,
 				B49C76B71DF10922008B353B /* AppDelegate.m in Sources */,
 				B49C76B41DF10922008B353B /* main.m in Sources */,
+				B49C76EC1DF11B72008B353B /* ChatMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
