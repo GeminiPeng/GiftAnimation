@@ -19,6 +19,8 @@
 		B49C76EC1DF11B72008B353B /* ChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76EB1DF11B72008B353B /* ChatMessage.m */; };
 		B49C76EF1DF11DCD008B353B /* ShakeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76EE1DF11DCD008B353B /* ShakeLabel.m */; };
 		B49C76F21DF13B41008B353B /* GiftShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76F11DF13B41008B353B /* GiftShowView.m */; };
+		B49C76F61DF152B3008B353B /* AnimOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76F51DF152B3008B353B /* AnimOperation.m */; };
+		B49C76F91DF152FF008B353B /* AnimOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76F81DF152FF008B353B /* AnimOperationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		B49C76EE1DF11DCD008B353B /* ShakeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeLabel.m; sourceTree = "<group>"; };
 		B49C76F01DF13B41008B353B /* GiftShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftShowView.h; sourceTree = "<group>"; };
 		B49C76F11DF13B41008B353B /* GiftShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftShowView.m; sourceTree = "<group>"; };
+		B49C76F41DF152B3008B353B /* AnimOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimOperation.h; sourceTree = "<group>"; };
+		B49C76F51DF152B3008B353B /* AnimOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimOperation.m; sourceTree = "<group>"; };
+		B49C76F71DF152FF008B353B /* AnimOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimOperationManager.h; sourceTree = "<group>"; };
+		B49C76F81DF152FF008B353B /* AnimOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimOperationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		B49C76B11DF10922008B353B /* GiftAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B49C76F31DF15239008B353B /* Line */,
 				B49C76E61DF114CC008B353B /* Model */,
 				B49C76E51DF114B6008B353B /* AnimationView */,
 				B49C76B51DF10922008B353B /* AppDelegate.h */,
@@ -174,6 +181,17 @@
 				B49C76EB1DF11B72008B353B /* ChatMessage.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B49C76F31DF15239008B353B /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				B49C76F41DF152B3008B353B /* AnimOperation.h */,
+				B49C76F51DF152B3008B353B /* AnimOperation.m */,
+				B49C76F71DF152FF008B353B /* AnimOperationManager.h */,
+				B49C76F81DF152FF008B353B /* AnimOperationManager.m */,
+			);
+			name = Line;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +330,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49C76F91DF152FF008B353B /* AnimOperationManager.m in Sources */,
+				B49C76F61DF152B3008B353B /* AnimOperation.m in Sources */,
 				B49C76BA1DF10922008B353B /* ViewController.m in Sources */,
 				B49C76F21DF13B41008B353B /* GiftShowView.m in Sources */,
 				B49C76E91DF11530008B353B /* GiftModel.m in Sources */,
