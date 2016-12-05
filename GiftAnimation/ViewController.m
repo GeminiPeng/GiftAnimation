@@ -31,11 +31,11 @@
     
     int x =arc4random()%9;
     msg.senderChatId = [NSString stringWithFormat:@"%d",x];
-    msg.senderName = @"彭博给孟欣";//msg.senderChatId;
+    msg.senderName = msg.senderChatId;
     
     //礼物模型
     GiftModel * model = [GiftModel new];
-    model.headImage = [UIImage imageNamed:@"IMG_0213"];
+    model.headImage = [UIImage imageNamed:@"luffy"];
     model.name = msg.senderName;
     model.giftName = msg.text;
     model.giftImage = [UIImage imageNamed:@"flower"];
